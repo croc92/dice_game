@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dice Game</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>DICE GAME</h1>
+        <p class="goal">first one to reach 42 points wins!</p>
+    </header>
+    <main>
+        <section class="player player--0 player--active">
+            <h3 class="player-name" id="name--0">player 1</h3>
+            <div class="tot-score-div">
+                <!-- <p class="total-label">total score</p> -->
+                <p class="score" id="score--0">66</p>
+            </div>
+            <div class="cur-score-div">
+                <p class="current-label">current score</p>
+                <p class="current-score" id="current--0">33</p>
+            </div>
+        </section>
+        <div id="message"></div>
+        <section class="image-btns-sec">
+            <button class="btn btn--roll">roll</button>
+            <img src="dice-5.png" alt="dice-roll" class="dice">
+            <button class="btn btn--hold">hold</button>
+        </section>
+        <section class="player player--1 player--passive">
+            <h3 class="player-name" id="name--1">player 2</h3>
+            <div class="tot-score-div">
+                <!-- <p class="total-label">total score</p> -->
+                <p class="score" id="score--1">66</p>
+            </div>
+            <div class="cur-score-div">
+                <p class="current-label">current score</p>
+                <p class="current-score" id="current--1">33</p>
+            </div>
+        </section>
+        <footer>
+            <button class="btn btn--new">new game</button>
+        </footer>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

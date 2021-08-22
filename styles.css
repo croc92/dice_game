@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    font-family: Jura, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header {
+    height: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+.goal {
+    font-size: 0.9rem;
+}
+
+main {
+    color: #f5f5f5;
+}
+
+.player {
+    height: 205px;
+    width: 280px;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 5px 5px 1.2rem rgb(237, 229, 245, 0.1);
+}
+
+.player-name {
+    text-transform: uppercase;
+}
+
+.tot-score-div {
+    height: 90px;
+    width: 140px;
+    /* background-color: #333; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/* .total-label {
+    font-size: 1.2rem;
+} */
+
+.score {
+    font-size: 4rem;
+}
+
+.cur-score-div {
+    height: 64px;
+    width: 140px;
+    /* background-color: #333; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.current-score {
+    font-size: 2rem;
+}
+
+.player--active {
+    box-shadow: 5px 5px 1.2rem rgb(237, 229, 245, 0.7);
+}
+
+.player--passive {
+    opacity: 0.4;
+}
+
+.image-btns-sec {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn {
+    color: #222;
+    background: none;
+    border: none;
+    font-family: inherit;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    background-color: white;
+    backdrop-filter: blur(10px);
+
+    padding: 0.3rem 0.3rem;
+    height: 3rem;
+    width: 4rem;
+    border-radius: 33%;
+    box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.dice {
+    height: 3rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    margin: 20px auto;
+}
+
+footer .btn {
+    width: 120px;
+}
+
+
+.player--winner {
+    box-shadow: 5px 5px 1.2rem rgb(33, 204, 129, 0.7);
+}
+
+.player--loser {
+    box-shadow: 5px 5px 1.2rem rgba(248, 0, 0, 0.7);
+}
+
+.hidden {
+    display: none;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    width: 280px;
+    font-size: 1.5rem;
+}
